@@ -4,7 +4,7 @@ module Web.Leo(
     ) where
 
 import Text.HTML.TagSoup
-import Network.HTTP(simpleHTTP,getRequest)
+import Network.HTTP
 
 -- first,   we need to query leo and fetch the page
 --    for that we need to have an option for queried language
