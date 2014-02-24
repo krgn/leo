@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml leorendertarget="1" dictQueryXSLT="0" lp="ende" lang="de">
+  <advMedia url="/advMedia/ende-410885e8.xml"/>
+  <search original="update" normalized="update" where="0" lp="ende" lang="de" hitcount="61"/>
+  <sectionlist>
+    <section sctnum="0" sctName="subst" sctTitle="Substantive" sctCount="16" sctTotalCnt="43">
+      <entry uid="362576">
+        <side hc="1" lang="en">
+          <repr>
+            <b>update</b>
+          </repr>
+          <words>
+            <word>update</word>
+          </words>
+          <ibox ajaxid="1362576">
+            <pron url="mRm1Ntan0TuNEFo9xxKdWg"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>die Aktualisierung  <small><i>Pl.: die Aktualisierungen</i></small></repr>
+          <words>
+            <word>die Aktualisierung</word>
+          </words>
+          <ibox ajaxid="3362576">
+            <pron url="Mkjtvd1fnoQmp5Paisllbg"/>
+            <flecttab stemType="noun" url="?kvz=4dkrADn71HeCbYC86wSPgvtmz_-hDVHy5CibUOpNgIaSe1ZZGmUtAhtX7GvialNSR8krwctLhUaAy2Y5DAG-VM6h_-3XbiSDUp8ecOUaRScy_lBpmwLNrq2H2l3RLbWEkX77VxuJ1IeHWxZ5j8gLUn0xTzvEa1TAB8999_tNBeHTHPAPP41" word=""/>
+            <extlink/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <entry uid="362577">
+        <side hc="1" lang="en">
+          <repr>
+            <b>update</b>
+          </repr>
+          <words>
+            <word>update</word>
+          </words>
+          <ibox ajaxid="1362577">
+            <pron url="mRm1Ntan0TuNEFo9xxKdWg"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>die Fortschreibung  <small><i>Pl.: die Fortschreibungen</i></small></repr>
+          <words>
+            <word>die Fortschreibung</word>
+          </words>
+          <ibox ajaxid="3362577">
+            <pron url="uTHEgouFOjR2KW_CxWdApw"/>
+            <flecttab stemType="noun" url="?kvz=4dkrADn71HeCbYC86wSPgvtmz_-hDVHy5CibUOpNgIaSe1ZZGmUtAhtXnGuiajNCtuk7AduLhEaAy2Y5DAG-VM6h_-3XbiSDUp8ecOUaRScy_lBpmwLNrq2H2l3RLbWEkX77VxuJ1IeHWxZ5j8gLUn0xTzvEa1TAB8999_tNBeHTHPAPYs1" word=""/>
+            <extlink/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <entry uid="362573">
+        <side hc="1" lang="en">
+          <repr>
+            <b>update</b>
+          </repr>
+          <words>
+            <word>update</word>
+          </words>
+          <ibox ajaxid="1362573">
+            <pron url="mRm1Ntan0TuNEFo9xxKdWg"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>das Nachfolgemodell</repr>
+          <words>
+            <word>das Nachfolgemodell</word>
+          </words>
+          <ibox ajaxid="3362573">
+            <pron url="La0WTa8TNDfEirvVDxr3Zw"/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <entry uid="362574">
+        <side hc="1" lang="en">
+          <repr>
+            <b>update</b>
+          </repr>
+          <words>
+            <word>update</word>
+          </words>
+          <ibox ajaxid="1362574">
+            <pron url="mRm1Ntan0TuNEFo9xxKdWg"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="1" lang="de">
+          <repr>das <b>Update</b>  <small><i>Pl.: die Updates</i></small></repr>
+          <words>
+            <word>das Update</word>
+          </words>
+          <ibox ajaxid="3362574">
+            <flecttab stemType="noun" url="?kvz=4dkrADn71HeCbYC86wSPgvtmz_-hDVHyNCkrUBvtgIaSe1ZZGmUtAhtXrGpT61IW1p97Ri7OgqL0vdZ-HmLsB00i2aVRKlLkwgmr0c29d2IC68Y5XfJrBK3XvztHjFKTVznucGv-QidF-_ZfvZT_4k0Af3-We4REIRntcXodYmF1zvo" word=""/>
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <entry uid="362578">
+        <side hc="1" lang="en">
+          <repr>
+            <b>update</b>
+          </repr>
+          <words>
+            <word>update</word>
+          </words>
+          <ibox ajaxid="1362578">
+            <pron url="mRm1Ntan0TuNEFo9xxKdWg"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>die Verbesserung  <small><i>Pl.: die Verbesserungen</i></small></repr>
+          <words>
+            <word>die Verbesserung</word>
+          </words>
+          <ibox ajaxid="3362578">
+            <flecttab stemType="noun" url="?kvz=4dkrADn71HeCbYC86wSPgvtmz_-hDVHy5CibUOpNgIaSe1ZZGmUtAhtXnGsDajIit4iKcKpKJIehjUXu3oLt1y0A7IxWLZfRkXibEbcb1IeX6xZ5bfJrccqjXzsWzJISYJksUB7ElDcyLQBtmyLdVp8xuS9QfdSEIRnt1roacmF1YqU" word=""/>
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <entry uid="362579">
+        <side hc="1" lang="en">
+          <repr><b>update</b> [comm.]</repr>
+          <words>
+            <word>update</word>
+          </words>
+          <ibox ajaxid="1362579">
+            <pron url="mRm1Ntan0TuNEFo9xxKdWg"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>die Durchbuchung  <small><i>Pl.: die Durchbuchungen</i></small></repr>
+          <words>
+            <word>die Durchbuchung</word>
+          </words>
+          <ibox ajaxid="3362579">
+            <flecttab stemType="noun" url="?kvz=4dkrADn71HeCbYC86wSPgvtmz_-hDVHy5CibUOpNgIaSe1ZZGmUtAhtXvGoCajIyp1jr0MpLJIehjUXu3oLt1y0A7IxWLZfRkXibEbcb1IeX6xZ5bfJrccqjXzsWzJISYJksUB7ElDcyLQBtmyLdVp8xuS9QfdSEIRnt1roacmF1DA4" word=""/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+          <realmgroup type="economy"/>
+        </info>
+      </entry>
+      <entry uid="362580">
+        <side hc="1" lang="en">
+          <repr><b>update</b> [comm.]</repr>
+          <words>
+            <word>update</word>
+          </words>
+          <ibox ajaxid="1362580">
+            <pron url="mRm1Ntan0TuNEFo9xxKdWg"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>die Verbuchung  <small><i>Pl.: die Verbuchungen</i></small></repr>
+          <words>
+            <word>die Verbuchung</word>
+          </words>
+          <ibox ajaxid="3362580">
+            <flecttab stemType="noun" url="?kvz=4dkrADn71HeCbYC86wSPgvtmz_-hDVHy5CibUOpNgIaSe1ZZGmUtAhtXnGsDajIqtok7satrEqSVbpY8PdNu5IyCvz1VzsISxvn6gBeelCeCHQCPvVVIdI0hef33KwXjZ0xrEKuLhINEyxZ5neDdcpvBPbtGrZSiB4i6VuxtAsAA6Su" word=""/>
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+          <realmgroup type="economy"/>
+        </info>
+      </entry>
+      <entry uid="362581">
+        <side hc="1" lang="en">
+          <repr><b>update</b> block</repr>
+          <words>
+            <word>update block</word>
+          </words>
+          <ibox ajaxid="1362581">
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>der Änderungsblock</repr>
+          <words>
+            <word>der Änderungsblock</word>
+          </words>
+          <ibox ajaxid="3362581">
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <entry uid="362582">
+        <side hc="1" lang="en">
+          <repr><b>update</b> date</repr>
+          <words>
+            <word>update date</word>
+          </words>
+          <ibox ajaxid="1362582">
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>das Verbuchungsdatum</repr>
+          <words>
+            <word>das Verbuchungsdatum</word>
+          </words>
+          <ibox ajaxid="3362582">
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <entry uid="362583">
+        <side hc="1" lang="en">
+          <repr><b>update</b> group</repr>
+          <words>
+            <word>update group</word>
+          </words>
+          <ibox ajaxid="1362583">
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>die Fortschreibungsfolge</repr>
+          <words>
+            <word>die Fortschreibungsfolge</word>
+          </words>
+          <ibox ajaxid="3362583">
+            <pron url="FI91W8nlRpnXvMriyNnUHw"/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <entry uid="362584">
+        <side hc="1" lang="en">
+          <repr><b>update</b> group</repr>
+          <words>
+            <word>update group</word>
+          </words>
+          <ibox ajaxid="1362584">
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>die Fortschreibungsgruppe</repr>
+          <words>
+            <word>die Fortschreibungsgruppe</word>
+          </words>
+          <ibox ajaxid="3362584">
+            <pron url="QY29dNgwuAsKxzcUzrRXUw"/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <entry uid="890644">
+        <side hc="1" lang="en">
+          <repr><b>update</b> index</repr>
+          <words>
+            <word>update index</word>
+          </words>
+          <ibox ajaxid="1890644">
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>der Änderungsindex</repr>
+          <words>
+            <word>der Änderungsindex</word>
+          </words>
+          <ibox ajaxid="3890644">
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <entry uid="362585">
+        <side hc="1" lang="en">
+          <repr><b>update</b> indicator</repr>
+          <words>
+            <word>update indicator</word>
+          </words>
+          <ibox ajaxid="1362585">
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>das Verbuchungskennzeichen</repr>
+          <words>
+            <word>das Verbuchungskennzeichen</word>
+          </words>
+          <ibox ajaxid="3362585">
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <entry uid="362587">
+        <side hc="1" lang="en">
+          <repr><b>update</b> program</repr>
+          <words>
+            <word>update program</word>
+          </words>
+          <ibox ajaxid="1362587">
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>das Verbuchungsprogramm</repr>
+          <words>
+            <word>das Verbuchungsprogramm</word>
+          </words>
+          <ibox ajaxid="3362587">
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <entry uid="362588">
+        <side hc="1" lang="en">
+          <repr><b>update</b> request</repr>
+          <words>
+            <word>update request</word>
+          </words>
+          <ibox ajaxid="1362588">
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>die Verbuchungsanforderung</repr>
+          <words>
+            <word>die Verbuchungsanforderung</word>
+          </words>
+          <ibox ajaxid="3362588">
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <entry uid="362590">
+        <side hc="1" lang="en">
+          <repr><b>update</b> rule</repr>
+          <words>
+            <word>update rule</word>
+          </words>
+          <ibox ajaxid="1362590">
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>die Änderungsregel</repr>
+          <words>
+            <word>die Änderungsregel</word>
+          </words>
+          <ibox ajaxid="3362590">
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="noun" catnum="0"/>
+        </info>
+      </entry>
+      <minprio val="0x81b068c09963ae5" fixedSect="1" cnt="27"/>
+    </section>
+    <section sctnum="1" sctName="verb" sctTitle="Verben" sctCount="11" sctTotalCnt="11">
+      <entry uid="347266" langlvl="A">
+        <side hc="1" lang="en">
+          <repr>to <b>update</b> sth.   <small><i>also </i></small> [comp.]</repr>
+          <words>
+            <word>to update sth.</word>
+          </words>
+          <ibox ajaxid="1347266">
+            <pron url="PT3BUEb9kotvR3kBDkcDwA"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>etw.<small><sup>Akk.</sup></small> aktualisieren <small>| <i>aktualisierte, aktualisiert</i> |</small></repr>
+          <words>
+            <word>etw. aktualisieren</word>
+          </words>
+          <ibox ajaxid="3347266">
+            <pron url="usBEvMCcTb8EuhIJ8lHZjA"/>
+            <flecttab stemType="verb" url="?kvz=4dkrADn71HeCbYC86wUP8lumz53RnXJXdzloUOstVOcyP2G5G4St9KvWOd6AbbCAR0nbEc9NgbHSm5Cpu7Vdw02HKW6A2wNElou7wDorVPbynUXux_Ku9IyCzzxVLZfBg2zk9SodwmdBugZ_XUL9d9qh2Luhm_UFgastpn0dhvFULYZ7XdJe1Q2DDFtwO7I0hpxtBlAAjm2" word=""/>
+            <extlink/>
+          </ibox>
+        </side>
+        <info>
+          <category type="verb" catnum="1"/>
+          <realmgroup type="technical"/>
+        </info>
+      </entry>
+      <entry uid="956639">
+        <side hc="1" lang="en">
+          <repr>to <b>update</b></repr>
+          <words>
+            <word>to update</word>
+          </words>
+          <ibox ajaxid="1956639">
+            <pron url="8OklfObAPraXLuqRiksAOA"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>aufdatieren <small>| <i>datierte auf, aufdatiert</i> |</small></repr>
+          <words>
+            <word>aufdatieren</word>
+          </words>
+          <ibox ajaxid="3956639">
+            <pron url="qFjyYH1Sy8RWqt-BiCakTA"/>
+            <flecttab stemType="verb" url="?kvz=4dkrADn71HeCbYC86wUP8lumz53RnXJXdzloEOstBOGkWrB9yhJrcsqhmeuQzsYCFVl7YJ1a0BdXrYDZ-wLLkzuWL7uAfsNUx7mrH_uKJDETrIUsnZbN1y0A_I3XvlZB07s-9SodUmdB-gUPPfVtFE5R3xpRmjukhz_MVe2ccmFQvPKPndIN10wA77uiyzJUh-j99SANXqB" word=""/>
+            <extlink/>
+          </ibox>
+        </side>
+        <info>
+          <category type="verb" catnum="1"/>
+        </info>
+      </entry>
+      <entry uid="347261">
+        <side hc="1" lang="en">
+          <repr>to <b>update</b></repr>
+          <words>
+            <word>to update</word>
+          </words>
+          <ibox ajaxid="1347261">
+            <pron url="8OklfObAPraXLuqRiksAOA"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>modernisieren <small>| <i>modernisierte, modernisiert</i> |</small></repr>
+          <words>
+            <word>modernisieren</word>
+          </words>
+          <ibox ajaxid="3347261">
+            <flecttab stemType="verb" url="?kvz=4dkrADn71HeCbYC86wUP8lumz53RnXJXdzloUOstVOcyP2G5G4St9KvWOd6AbbCAR0nbEc9NgbHSm5Cpu7Vdw02HKW6Am8JEp4u6wBorVPbynUXux_Ku9IyCzzxVLZfBg2zk9SodwmdBugZ_XUL9d9qh2Luhm_UFgastpn0dhvFULYZ7XdJe1Q2DDFtwO7I0hpxtBlAAK4u" word=""/>
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="verb" catnum="1"/>
+        </info>
+      </entry>
+      <entry uid="347262">
+        <side hc="1" lang="en">
+          <repr>to <b>update</b></repr>
+          <words>
+            <word>to update</word>
+          </words>
+          <ibox ajaxid="1347262">
+            <pron url="8OklfObAPraXLuqRiksAOA"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>nachführen <small>| <i>führte nach, nachgeführt</i> |</small></repr>
+          <words>
+            <word>nachführen</word>
+          </words>
+          <ibox ajaxid="3347262">
+            <pron url="EkTiGfM2qhy9OJPCl6htEQ"/>
+            <flecttab stemType="verb" url="?kvz=4dkrADn71HeCbYC86wUP8lumz53RnXJXdzloEOstBOGkWrB9yhJrcsqhmeuQzsYCFVl7YJ1a0BdXrYDZ-wLLkzuWLruAjsQE43OLHTuXxUDUbpY8PdNu9I6wfr4WbsZQUo8eX90alyZSXQZcWlK9BAvyWep2ShL1bpxrJj4Ng2HUORePjVK5VI7Bfr1XmVIk13-7EM7KAsAAQqW" word=""/>
+            <extlink/>
+          </ibox>
+        </side>
+        <info>
+          <category type="verb" catnum="1"/>
+        </info>
+      </entry>
+      <entry uid="347263">
+        <side hc="1" lang="en">
+          <repr>to <b>update</b></repr>
+          <words>
+            <word>to update</word>
+          </words>
+          <ibox ajaxid="1347263">
+            <pron url="8OklfObAPraXLuqRiksAOA"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>verbessern <small>| <i>verbesserte, verbessert</i> |</small></repr>
+          <words>
+            <word>verbessern</word>
+          </words>
+          <ibox ajaxid="3347263">
+            <pron url="EVnthXrC3NGsnrBPt4gOJA"/>
+            <flecttab stemType="verb" url="?kvz=4dkrADn71HeCbYC86wUP8lumz53RnXLnBCmrUNtNJIaD68HZG7CNkotWWXp2a0JiVx8ewnvbJAblLcUtW9B95KrG7ruAu8RB0MiLEctOxUDU_pfu7ZFNd90njz5k7BdCcJ78Bf2OEyF1uoCfm8G69KqBb_6GTbMFdvEbUB1sAXFVvqZ-_VLp9f7B_r4HzsLyJ_-7YKpbobAE5qh" word=""/>
+            <extlink/>
+          </ibox>
+        </side>
+        <info>
+          <category type="verb" catnum="1"/>
+        </info>
+      </entry>
+      <entry uid="347260">
+        <side hc="1" lang="en">
+          <repr>to <b>update</b> sth.</repr>
+          <words>
+            <word>to update sth.</word>
+          </words>
+          <ibox ajaxid="1347260">
+            <pron url="PT3BUEb9kotvR3kBDkcDwA"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>etw.<small><sup>Akk.</sup></small> fortschreiben <small>| <i>schrieb fort, fortgeschrieben</i> |</small></repr>
+          <words>
+            <word>etw. fortschreiben</word>
+          </words>
+          <ibox ajaxid="3347260">
+            <pron url="E3S5vEiyR1Y9fVSzsPHpog"/>
+            <flecttab stemType="verb" url="?kvz=4dkrADn71HeCbYC86wUP8lumz53RnXJXdzk4UOs15Dfy60BpbVJt4f9muTuBy9QC1vnbgD2-luVS20HJzRG_ko_B_xpmelLUVwneUAoxNSfjmwb43kNNwGwCPoxWvjIhERyNg93eQuIHvwWs7dLN3S2GaerQrZShxt9thvtupDb0moAI8BG7pM6Rfr527BQC1S89FwweU2IHTSDZvVQ7kj5WDxAAyFS" word=""/>
+            <extlink/>
+          </ibox>
+        </side>
+        <info>
+          <category type="verb" catnum="1"/>
+        </info>
+      </entry>
+      <entry uid="762804">
+        <side hc="1" lang="en">
+          <repr>to <b>update</b> so.</repr>
+          <words>
+            <word>to update so.</word>
+          </words>
+          <ibox ajaxid="1762804">
+            <pron url="doHABMu6h9d_bD_H6Fcawg"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>jmdn. neu informieren <small>| <i>informierte, informiert</i> |</small></repr>
+          <words>
+            <word>jmdn. neu informieren</word>
+          </words>
+          <ibox ajaxid="3762804">
+            <flecttab stemType="verb" url="?kvz=4dkrADn71HeCbYC86wUP8lumz53RnXJXdzloUOstVOcyP2G5G4St9KvWOd6AbbCAR0nbEc9NgbHSm5Cpu7Vdw02HKW6Ai4Jkpya6wCtLxUDUbpY8vdFPVQ6xfr4W_ldQwg8bUfidhPHT_QZvHoLB0yqmGUxQbWByDC9NJv2ZAuWkPQW_HFJv1-txWZsAKyfVAXAAabu" word=""/>
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="verb" catnum="1"/>
+        </info>
+      </entry>
+      <entry uid="347259">
+        <side hc="1" lang="en">
+          <repr>to <b>update</b> sth.</repr>
+          <words>
+            <word>to update sth.</word>
+          </words>
+          <ibox ajaxid="1347259">
+            <pron url="PT3BUEb9kotvR3kBDkcDwA"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>etw.<small><sup>Akk.</sup></small> auf den neuesten (<small><i>auch:</i></small> neusten) Stand bringen <small>| <i>brachte, gebracht</i> |</small></repr>
+          <words>
+            <word>etw. auf den neuesten Stand bringen</word>
+            <word>etw. auf den neusten Stand bringen</word>
+          </words>
+          <ibox ajaxid="3347259">
+            <flecttab stemType="verb" url="?kvz=4dkrADn71HeCbYC86wUP8lumz53RnXJXdzmYUduNdIeCW2B9GhS9csqhmeuQbsSmFVl7YJ1a0AHXqwDZ-wLLkzuGKauATsREQ099Ze0ZwrF0bqAc2yLNdz5bf34WrRKT0Jzshv1dAsHTKOF5voVtlB0RjGsATbMFBvlHgB3eEhDXnQf8rdJtUHxx_PxXvkShhymdAFsr1SF3ZWo" word=""/>
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="verb" catnum="1"/>
+        </info>
+      </entry>
+      <entry uid="347265">
+        <side hc="1" lang="en">
+          <repr>to <b>update</b> [comm.]</repr>
+          <words>
+            <word>to update</word>
+          </words>
+          <ibox ajaxid="1347265">
+            <pron url="8OklfObAPraXLuqRiksAOA"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>durchbuchen <small>| <i>buchte durch, durchgebucht</i> |</small></repr>
+          <words>
+            <word>durchbuchen</word>
+          </words>
+          <ibox ajaxid="3347265">
+            <flecttab stemType="verb" url="?kvz=4dkrADn71HeCbYC86wUP8lumz53RnXJXdzloEOstBOGkWrB9yhJrcsqhmeuQzsYCFVl7YJ1a0BdXrYDZ-wLLkzuWL7uALsNUtvk7f_pLhFESrIUsnZbN1y0A_I3XvlXB05--9SodVUeyOxZozZLOkw1hjGsAbbMmptlKgB3eEhwnPIb_mcMdRA0FvzxVbJBScdmbAFsr1SF3VW4" word=""/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="verb" catnum="1"/>
+          <realmgroup type="economy"/>
+        </info>
+      </entry>
+      <entry uid="347264">
+        <side hc="1" lang="en">
+          <repr>to <b>update</b> [bank.]</repr>
+          <words>
+            <word>to update</word>
+          </words>
+          <ibox ajaxid="1347264">
+            <pron url="8OklfObAPraXLuqRiksAOA"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>verbuchen <small>| <i>verbuchte, verbucht</i> |</small></repr>
+          <words>
+            <word>verbuchen</word>
+          </words>
+          <ibox ajaxid="3347264">
+            <pron url="60n84wHkl6d8mQV3ef0wjg"/>
+            <flecttab stemType="verb" url="?kvz=4dkrADn71HeCbYC86wUP8lumz53RnXJXdzloUOstVOcyP2G5G4St9KvWOd6AbbCAR0nbEc9NgbHSm5Cpu7Vdw0UHKW6AfVNTB-97Fh4IwbFUvqZ-HmLsx09Drc6FbbQFFJg7Vs2dkiIEnSH46n2L0u3wr73SbeBSAV-90q2dQgDXv4UfO6TL4l2HKP319Ok" word=""/>
+            <extlink/>
+          </ibox>
+        </side>
+        <info>
+          <category type="verb" catnum="1"/>
+          <realmgroup type="economy"/>
+        </info>
+      </entry>
+      <entry uid="347267">
+        <side hc="1" lang="en">
+          <repr>to <b>update</b> claims statistics</repr>
+          <words>
+            <word>to update claims statistics</word>
+          </words>
+          <ibox ajaxid="1347267">
+            <pron url="2dgXjpTSgflahNmVFKjZaQ"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>die Schadenstatistik auf den neuesten (<small><i>auch:</i></small> neusten) Stand bringen <small>| <i>brachte, gebracht</i> |</small></repr>
+          <words>
+            <word>die Schadenstatistik auf den neuesten Stand bringen</word>
+            <word>die Schadenstatistik auf den neusten Stand bringen</word>
+          </words>
+          <ibox ajaxid="3347267">
+            <flecttab stemType="verb" url="?kvz=4dkrADn71HeCbYC86wUP8lumz53RnXJXdzmYUduNdIeCW2B9GhS9csqhmeuQbsSmFVl7YJ1a0AHXqwDZ-wLLkzuGKauATsREQ099Ze0ZwrF0bqAc2yLNdz5bf34WrRKT0Jzshv1dAsHTKOF5voVtlB0RjGsATbMFBvlHgB3eEhDXnQf8rdJtUHxx_PxXvkShhymdAFsr1SF3ZWo" word=""/>
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="verb" catnum="1"/>
+        </info>
+      </entry>
+    </section>
+    <section sctnum="2" sctName="adjadv" sctTitle="Adjektive/Adverbien" sctCount="6" sctTotalCnt="6">
+      <entry uid="362597">
+        <side hc="1" lang="en">
+          <repr><b>updated</b>  <small><i>adj.</i></small></repr>
+          <words>
+            <word>updated</word>
+          </words>
+          <ibox ajaxid="1362597">
+            <pron url="H-7anFyel_ob31IjRJgg5A"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>aktualisiert</repr>
+          <words>
+            <word>aktualisiert</word>
+          </words>
+          <ibox ajaxid="3362597">
+            <flecttab stemType="adj" url="?kvz=4dkrADn71HeCbYC86wR_ckq3v60GmOM3B-lbUKvd9KfhP2G5G4St5KrGKauAbsISx2jqkOuLBVdNm9G4LZF8F90B3xxVXZUBwVxuBlAAEc2" word=""/>
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="adjective" catnum="2"/>
+        </info>
+      </entry>
+      <entry uid="362598">
+        <side hc="1" lang="en">
+          <repr><b>updated</b>  <small><i>adj.</i></small></repr>
+          <words>
+            <word>updated</word>
+          </words>
+          <ibox ajaxid="1362598">
+            <pron url="H-7anFyel_ob31IjRJgg5A"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>aktuell</repr>
+          <words>
+            <word>aktuell</word>
+          </words>
+          <ibox ajaxid="3362598">
+            <flecttab stemType="adj" url="?kvz=4dkrADn71HeCbYC86wR_ckq3v60GmOM3B-lbUKvd5KdWasA5HfVdw0tXKWtFq6NGho6Ntj4NwbFU7qf_LdNulI5SDxAA9pu" word=""/>
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="adjective" catnum="2"/>
+        </info>
+      </entry>
+      <entry uid="450714">
+        <side hc="1" lang="en">
+          <repr><b>updated</b>  <small><i>adj.</i></small></repr>
+          <words>
+            <word>updated</word>
+          </words>
+          <ibox ajaxid="1450714">
+            <pron url="H-7anFyel_ob31IjRJgg5A"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>erhöht   - <small><i>Leistung</i></small></repr>
+          <words>
+            <word>erhöht</word>
+          </words>
+          <ibox ajaxid="3450714">
+            <flecttab stemType="adj" url="?kvz=4dkrADn71HeCbYC86wR_ckq3v60GmOM3B-lbUKvd9KfhP2G5G4St5KrGKauAbsJaBvOL3Zpb4qSUbpY8PdNu5IyCvz1VzsACf31" word=""/>
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="adjective" catnum="2"/>
+        </info>
+      </entry>
+      <entry uid="362600">
+        <side hc="1" lang="en">
+          <repr><b>updated</b>  <small><i>adj.</i></small></repr>
+          <words>
+            <word>updated</word>
+          </words>
+          <ibox ajaxid="1362600">
+            <pron url="H-7anFyel_ob31IjRJgg5A"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>auf dem Laufenden</repr>
+          <words>
+            <word>auf dem Laufenden</word>
+          </words>
+          <ibox ajaxid="3362600">
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="adjective" catnum="2"/>
+        </info>
+      </entry>
+      <entry uid="362599">
+        <side hc="1" lang="en">
+          <repr><b>updated</b>  <small><i>adj.</i></small></repr>
+          <words>
+            <word>updated</word>
+          </words>
+          <ibox ajaxid="1362599">
+            <pron url="H-7anFyel_ob31IjRJgg5A"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>modernisiert</repr>
+          <words>
+            <word>modernisiert</word>
+          </words>
+          <ibox ajaxid="3362599">
+            <flecttab stemType="adj" url="?kvz=4dkrADn71HeCbYC86wR_ckq3v60GmOM3B-lbUKvd9KfhP2G5G4St5KrGKauAbsLSxynrsduLBVdNm9G4LZF8F90B3xxVXZUBwVxuBlAAfL-" word=""/>
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="adjective" catnum="2"/>
+        </info>
+      </entry>
+      <entry uid="362601">
+        <side hc="1" lang="en">
+          <repr><b>updated</b>  <small><i>adj.</i></small></repr>
+          <words>
+            <word>updated</word>
+          </words>
+          <ibox ajaxid="1362601">
+            <pron url="H-7anFyel_ob31IjRJgg5A"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>auf den neuesten (<small><i>auch:</i></small> neusten) Stand gebracht</repr>
+          <words>
+            <word>auf den neuesten Stand gebracht</word>
+            <word>auf den neusten Stand gebracht</word>
+          </words>
+          <ibox ajaxid="3362601">
+            <flecttab stemType="adj" url="?kvz=4dkrADn71HeCbYC86wR_ckq3v60GmOM3B-lbUKvd5KdWasA5HfVdw0tXKWu1S0NXIRytlS2dAUFVrrf_XdG-BKAADDW" word=""/>
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info>
+          <category type="adjective" catnum="2"/>
+        </info>
+      </entry>
+    </section>
+    <section sctnum="7" sctName="example" sctTitle="Beispiele" sctCount="1" sctTotalCnt="1">
+      <entry uid="379137">
+        <side hc="1" lang="en">
+          <repr>It has been <b>updated</b></repr>
+          <words>
+            <word>It has been updated</word>
+          </words>
+          <ibox ajaxid="1379137">
+            <pron url="YRyONr0W_7oTiRwKpahOxQ"/>
+            <extlink/>
+          </ibox>
+        </side>
+        <side hc="0" lang="de">
+          <repr>Es ist auf den neuesten (<small><i>auch:</i></small> neusten) Stand gebracht worden</repr>
+          <words>
+            <word>Es ist auf den neuesten Stand gebracht worden</word>
+            <word>Es ist auf den neusten Stand gebracht worden</word>
+          </words>
+          <ibox ajaxid="3379137">
+            <extlink/>
+            <linguatec/>
+          </ibox>
+        </side>
+        <info/>
+      </entry>
+    </section>
+  </sectionlist>
+  <similar>
+    <side lang="en">
+      <word>pupate</word>
+      <word>uprate</word>
+    </side>
+    <side lang="de"/>
+  </similar>
+  <baseform>
+    <side lang="en"/>
+    <side lang="de"/>
+  </baseform>
+  <forumRef count="30">
+    <link href="/forum/viewGeneraldiscussion.php?idThread=836522&amp;idForum=8" lastChangeDate="1268811661" lastChangeTime="" lastChangeEpochSec="1268811661" followupCnt="248" domain="">
+      <subject>Forum Update</subject>
+      <teaser>Seit der Umstellung vom Wochenende scheint das 'Update' [F5]innerhalb eines Forums nicht zu funktion</teaser>
+    </link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=416053&amp;idForum=8" lastChangeDate="1202813656" lastChangeTime="" lastChangeEpochSec="1202813656" followupCnt="37" domain="">
+      <subject>Vokabeltrainer Update</subject>
+      <teaser>Das neue Update des Vokabeltrainers sollte hoffentlich zahlreiche Probleme, insbesondere für Safari</teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=1112607&amp;idForum=2" lastChangeDate="1320499795" lastChangeTime="" lastChangeEpochSec="1320499795" followupCnt="1" domain="">
+      <subject>content update</subject>
+      <teaser>Free monthly content updates keep your DVD up-to-date on future events.  Inhaltsaktualisierung?</teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=1210713&amp;idForum=2" lastChangeDate="1371289727" lastChangeTime="" lastChangeEpochSec="1371289727" followupCnt="1" domain="">
+      <subject>update call</subject>
+      <teaser>Wieder mal diese nervigen Stellenbeschreibungen:  Initiate/join PR planning sessions and monthly </teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=348169&amp;idForum=2" lastChangeDate="1189262396" lastChangeTime="" lastChangeEpochSec="1189262396" followupCnt="1" domain="">
+      <subject>lift update</subject>
+      <teaser>bei einem Programm erscheint am Unterrand des Bildschirmes folgende Auswahlmöglichkeit: "Show, Exit</teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=613889&amp;idForum=2" lastChangeDate="1226397537" lastChangeTime="" lastChangeEpochSec="1226397537" followupCnt="2" domain="">
+      <subject>trading update</subject>
+      <teaser>In a Q3 trading update, Rentokil Initial has reported a 70% drop in profit compared to the sa</teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=1091201&amp;idForum=2" lastChangeDate="1311581520" lastChangeTime="" lastChangeEpochSec="1311581520" followupCnt="3" domain="">
+      <subject>project update</subject>
+      <teaser>Follow-up Meetings: Remove miscommunication in project meetings or updates.  Was ist denn genau hier</teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=855127&amp;idForum=2" lastChangeDate="1261151374" lastChangeTime="" lastChangeEpochSec="1261151374" followupCnt="1" domain="">
+      <subject>Update Interval</subject>
+      <teaser>Happy Friday everyone!!  What is the correct German written form for 'Update Interval'? Is it one wo</teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=972748&amp;idForum=2" lastChangeDate="1282644468" lastChangeTime="" lastChangeEpochSec="1282644468" followupCnt="3" domain="">
+      <subject>update on </subject>
+      <teaser>Can you shortly update me on the situation? Can you update me on the status of the project?</teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=1192310&amp;idForum=2" lastChangeDate="1360259047" lastChangeTime="" lastChangeEpochSec="1360259047" followupCnt="4" domain="">
+      <subject>update someone</subject>
+      <teaser>Scroll down the page until you find a project manager you wish to update.  From an IT </teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=360381&amp;idForum=2" lastChangeDate="1191243698" lastChangeTime="" lastChangeEpochSec="1191243698" followupCnt="6" domain="">
+      <subject>status update</subject>
+      <teaser>da sitze ich verzweifelt vor dem Eudora und muss ein Mail auf deutsch schreiben. Will mich nach dem </teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=725526&amp;idForum=2" lastChangeDate="1241705007" lastChangeTime="" lastChangeEpochSec="1241705007" followupCnt="1" domain="">
+      <subject>market update</subject>
+      <teaser>market update wie wurden Sie diesen Ausdruck ins Deutsch übersetzen?  Cheers  Dominik</teaser>
+    </link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=1130487&amp;idForum=18" lastChangeDate="1327857917" lastChangeTime="" lastChangeEpochSec="1327857917" followupCnt="1" domain="">
+      <subject>Update für Bewerbung</subject>
+      <teaser>Hallo zusammen,  ich habe mich im September 2011 in den USA auf eine Stelle beworben.  Im Oktober 20</teaser>
+    </link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=13122&amp;idForum=4" lastChangeDate="1025192831" lastChangeTime="" lastChangeEpochSec="1025192831" followupCnt="4" domain="">
+      <subject>Last Update im Forum</subject>
+      <teaser>Hallo LEO-Team, könnte man nicht in der Spalte "LastUpdate" hier im Forum auch die Uhrzeit anzeigen</teaser>
+    </link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=3130&amp;idForum=4" lastChangeDate="1157439669" lastChangeTime="" lastChangeEpochSec="1157439669" followupCnt="5" domain="">
+      <subject>Update für MS Word</subject>
+      <teaser>Wir hatten doch neulich erst eine Diskussion über das Update "neue deutsche Rechtschreibung" für M</teaser>
+    </link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=3694&amp;idForum=4" lastChangeDate="1025192831" lastChangeTime="" lastChangeEpochSec="1025192831" followupCnt="4" domain="">
+      <subject>Last Update im Forum</subject>
+      <teaser>Hallo LEO-Team, könnte man nicht in der Spalte "LastUpdate" hier im Forum auch die Uhrzeit anzeigen</teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=1201936&amp;idForum=1" lastChangeDate="1365750074" lastChangeTime="" lastChangeEpochSec="1365750074" followupCnt="2" domain="">
+      <subject>Massen update</subject>
+      <teaser>Hallo, ich suche den englischen Begriff zum Ausdruck "Massen Update". In meinem Zusammenhang ist es </teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=134599&amp;idForum=1" lastChangeDate="1262173183" lastChangeTime="" lastChangeEpochSec="1262173183" followupCnt="9" domain="">
+      <subject>update... auf</subject>
+      <teaser>Update eines Editors auf die aktuellste Version</teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=347009&amp;idForum=1" lastChangeDate="1189113500" lastChangeTime="" lastChangeEpochSec="1189113500" followupCnt="4" domain="">
+      <subject>Update machen</subject>
+      <teaser>Machen Sie ein Update auf xxx 0.1.2.16 oder stellen Sie in torcc den Dienst »ControlPort« ab.  wie</teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=600472&amp;idForum=1" lastChangeDate="1224603479" lastChangeTime="" lastChangeEpochSec="1224603479" followupCnt="3" domain="">
+      <subject>erneutes update</subject>
+      <teaser>Entschuldigen Sie das erneute Update...  Sorry for the update again....so simple?</teaser>
+    </link>
+    <link href="/forum/viewWrongentry.php?idThread=43696&amp;idForum=3" lastChangeDate="1042723101" lastChangeTime="" lastChangeEpochSec="1042723101" followupCnt="3" domain="">
+      <subject>last update - Stand </subject>
+      <teaser>in Release Notes Stand: 16.Januar 2003 (in einem technischen Dokument) last update: 16. January 2003</teaser>
+    </link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=42335&amp;idForum=8" lastChangeDate="1126795675" lastChangeTime="" lastChangeEpochSec="1126795675" followupCnt="1" domain="">
+      <subject>Update of history page</subject>
+      <teaser>Wolltet Ihr nicht bei Gelegenheit auch die englische Version des geschichtlichen Rueckblicks auf den</teaser>
+    </link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=42486&amp;idForum=8" lastChangeDate="1139174107" lastChangeTime="" lastChangeEpochSec="1139174107" followupCnt="2" domain="">
+      <subject>Forumseinträge - update im Wörterbuch</subject>
+      <teaser>Mich würde interessieren,   - in welchem Zeitraum, nach welcher Zeit werden Forumsbeiträge im Wör</teaser>
+    </link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=1197734&amp;idForum=8" lastChangeDate="1363789751" lastChangeTime="" lastChangeEpochSec="1363789751" followupCnt="7" domain="">
+      <subject>Neues Update testen</subject>
+      <teaser>Hallo, falls uns jemand beim Testen helfen möchte, auf   http://tdict.leo.org/  gibt steht d</teaser>
+    </link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=1201085&amp;idForum=8" lastChangeDate="1382725095" lastChangeTime="" lastChangeEpochSec="1382725095" followupCnt="300" domain="">
+      <subject>Neues großes Update</subject>
+      <teaser>Hallo, falls uns jemand beim Testen helfen möchte, auf  http://tdict.leo.org/  gibt steht das näch</teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=951070&amp;idForum=2" lastChangeDate="1277886363" lastChangeTime="" lastChangeEpochSec="1277886363" followupCnt="9" domain="">
+      <subject>Give sb an update</subject>
+      <teaser>I just wanted to give you an update on the work - so far, I've done 4 pages of the proofreading and </teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=989329&amp;idForum=2" lastChangeDate="1285991266" lastChangeTime="" lastChangeEpochSec="1285991266" followupCnt="1" domain="">
+      <subject>employee update session</subject>
+      <teaser>Don't hold an important employee update session on a tight time schedule.  Ist aus einem Buch mit Ti</teaser>
+    </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=907899&amp;idForum=2" lastChangeDate="1270637855" lastChangeTime="" lastChangeEpochSec="1270637855" followupCnt="2" domain="">
+      <subject>Product Service Update</subject>
+      <teaser>PRODUCT SERVICE UPDATE- Repair Started  PRODUCT SERVICE UPDATE- Product Shipped  Hier </teaser>
+    </link>
+  </forumRef>
+  <forum>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=836522&amp;idForum=8">Forum Update</link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=416053&amp;idForum=8">Vokabeltrainer Update</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=1112607&amp;idForum=2">content update</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=1210713&amp;idForum=2">update call</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=348169&amp;idForum=2">lift update</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=613889&amp;idForum=2">trading update</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=1091201&amp;idForum=2">project update</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=855127&amp;idForum=2">Update Interval</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=972748&amp;idForum=2">update on </link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=1192310&amp;idForum=2">update someone</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=360381&amp;idForum=2">status update</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=725526&amp;idForum=2">market update</link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=1130487&amp;idForum=18">Update für Bewerbung</link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=13122&amp;idForum=4">Last Update im Forum</link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=3130&amp;idForum=4">Update für MS Word</link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=3694&amp;idForum=4">Last Update im Forum</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=1201936&amp;idForum=1">Massen update</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=134599&amp;idForum=1">update... auf</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=347009&amp;idForum=1">Update machen</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=600472&amp;idForum=1">erneutes update</link>
+    <link href="/forum/viewWrongentry.php?idThread=43696&amp;idForum=3">last update - Stand </link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=42335&amp;idForum=8">Update of history page</link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=42486&amp;idForum=8">Forumseinträge - update im Wörterbuch</link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=1197734&amp;idForum=8">Neues Update testen</link>
+    <link href="/forum/viewGeneraldiscussion.php?idThread=1201085&amp;idForum=8">Neues großes Update</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=951070&amp;idForum=2">Give sb an update</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=989329&amp;idForum=2">employee update session</link>
+    <link href="/forum/viewUnsolvedquery.php?idThread=907899&amp;idForum=2">Product Service Update</link>
+  </forum>
+  <ffsynlist word="update">
+    <side lang="en"/>
+    <side lang="de">
+      <word>Aktualisierung</word>
+      <word vocab="1">Verbesserung</word>
+      <word>nachführen</word>
+      <word>Durchbuchung</word>
+      <word vocab="1">verbessern</word>
+      <word vocab="1">aktualisieren</word>
+      <word>aufdatieren</word>
+      <word>durchbuchen</word>
+      <word>Fortschreibung</word>
+    </side>
+  </ffsynlist>
+  <servicedata entries="792.620" queries="10.473.705" hostName="leomuc1" timeUsed="2582" login="false" nick=""/>
+</xml>
