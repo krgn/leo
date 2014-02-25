@@ -21,6 +21,13 @@ cabal configure
 cabal install
 ```
 
+Todo:
+----
+
+* Instance for Show for Language
+* Implement Output formats (Stdout, CSV, JSON)
+* Data.Default interface
+
 Disclaimer
 ----------
 `leo` is basically a web scraper, so be prepared that it might break while I'm
