@@ -23,6 +23,7 @@ import Network.HTTP
 data Language = En | Fr | Sp | It | Ch | Ru | Pt | Pl | De | Unknown
               deriving (Show, Eq)
 
+
 -- |For simple parsing of Language from XML we use the Read class.
 instance Read Language where
     readsPrec _ value = 
@@ -36,6 +37,7 @@ instance Read Language where
                     then [(result, drop (length attempt) value)]
                     else tryParse xs
 
+
 -- | A Tanslation always has a language and a value, the translation
 data Translation = Translation { 
         language    :: Language, 
@@ -43,15 +45,23 @@ data Translation = Translation {
     }
     deriving (Show, Eq)
 
-data QueryResult = Nouns    [(Translation,Translation)] -- ^ Nouns    constructor is a list of translation tuples
-                 | Verbs    [(Translation,Translation)] -- ^ Verbs    constructor is a list of translation tuples 
-                 | AdjAdvs  [(Translation,Translation)] -- ^ AdjAdvs  constructor is a list of translation tuples 
-                 | Examples [(Translation,Translation)] -- ^ Examples constructor is a list of translation tuples
+
+data QueryResult = Nouns    [(Translation,Translation)] 
+                 -- ^ Nouns    constructor is a list of translation tuples
+                 | Verbs    [(Translation,Translation)] 
+                 -- ^ Verbs    constructor is a list of translation tuples 
+                 | AdjAdvs  [(Translation,Translation)] 
+                 -- ^ AdjAdvs  constructor is a list of translation tuples 
+                 | Examples [(Translation,Translation)] 
+                 -- ^ Examples constructor is a list of translation tuples
                  | None
+                 -- ^ None for queries with no result
                  deriving (Show)
+
 
 data OutFormat = JSON | TSV | CSV
     deriving (Show, Eq)
+
 
 -- |'query' runs a translation query against the dict.leo.org webservice 
 query :: String            -- ^ search term to translate
