@@ -21,10 +21,36 @@ cabal configure
 cabal install
 ```
 
+Usage
+-----
+
+The command line application specifies a few options. Find out about them using
+the `--help` switch.
+
+
+```
+leo --help
+
+```
+
+Valid languages are:
+
+```
+en - English
+fr - French
+sp - Spanish
+it - Italian
+ch - Chinese
+ru - Russian
+pt - Portugese
+pl - Polish
+```
+
 Todo:
 ----
 
 * Implement Output formats (Stdout, CSV, JSON)
+* Implement command line arg parsing 
 
 Disclaimer
 ----------
