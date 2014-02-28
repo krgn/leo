@@ -24,9 +24,7 @@ cabal install
 Todo:
 ----
 
-* Instance for Show for Language
 * Implement Output formats (Stdout, CSV, JSON)
-* Data.Default interface
 
 Disclaimer
 ----------
