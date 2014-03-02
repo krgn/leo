@@ -23,6 +23,8 @@ library
                          , tagsoup
                          , HTTP
                          , data-default
+                         , cmdtheline
+
     exposed-modules:     Web.Leo
 
 executable leo
@@ -31,6 +33,8 @@ executable leo
                           , tagsoup
                           , data-default
                           , HTTP
+                          , cmdtheline
+
     hs-source-dirs:       src
     default-language:     Haskell2010
     other-modules:        Web.Leo

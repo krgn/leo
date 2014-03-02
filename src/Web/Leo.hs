@@ -1,4 +1,4 @@
-module Web.Leo where
+module Web.Leo(query, Language) where
 
 import Text.HTML.TagSoup
 import Network.HTTP
