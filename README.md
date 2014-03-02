@@ -50,7 +50,6 @@ Todo:
 ----
 
 * Implement Output formats (Stdout, CSV, JSON)
-* Implement command line arg parsing 
 
 Disclaimer
 ----------

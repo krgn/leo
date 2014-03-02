@@ -28,6 +28,5 @@ queryWithOptions term lang num = do
             putStrLn $ show results
         Nothing -> fail "invalid language"
 
-
 main :: IO ()
 main = run (runQuery, termInfo)

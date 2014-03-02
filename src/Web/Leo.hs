@@ -23,7 +23,8 @@ fetch :: String  -- ^ the query string
 fetch q l = do
     -- -get = getRequest "?tolerMode=nof&lp=ende&lang=de&rmWords=off&rmSearch=on&directN=0&search=update&searchLoc=0&resultOrder=basic&sectLenMax=16"
     let req = defaultLeoOptions
-        get = getRequest $ show $ req { lang = l, search = q }
+        flam = req { lang = l, search = q }
+        get = getRequest $ show flam 
     result <- simpleHTTP get
     getResponseBody result
 
@@ -35,9 +36,10 @@ processRaw = partitions (~== TagOpen "section" []) . parseTags
 toQueryResult :: [Tag String] -> QueryResult
 toQueryResult soup = let category = head soup in 
         case fromAttrib "sctName" category of
-            "subst"   -> Nouns $ collectResults soup
-            "verb"    -> Verbs $ collectResults soup
-            "adjadv"  -> AdjAdvs $ collectResults soup
+            "subst"   -> Nouns    $ collectResults soup
+            "phrase"  -> Phrase   $ collectResults soup
+            "verb"    -> Verbs    $ collectResults soup
+            "adjadv"  -> AdjAdvs  $ collectResults soup
             "example" -> Examples $ collectResults soup
             _         -> None
         where collectResults s = map toTranslation 

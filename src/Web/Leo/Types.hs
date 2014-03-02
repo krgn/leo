@@ -15,14 +15,14 @@ instance Read ResultOrder where
                         then [(Basic,   "")]
                         else [(NoOrder, "")]
 
-data Language = En | Fr | Sp | It | Ch | Ru | Pt | Pl | De | Unknown
-              deriving (Eq)
+data Language = En | Fr | Es | It | Ch | Ru | Pt | Pl | De | Unknown
+    deriving (Eq)
 
 -- |For simple parsing of Language from XML we use the Read class.
 instance Read Language where
     readsPrec _ value = 
         tryParse langs 
-        where langs = [("en", En), ("fr", Fr), ("sp", Sp),
+        where langs = [("en", En), ("fr", Fr), ("es", Es),
                        ("it", It), ("ch", Ch), ("ru", Ru),
                        ("pt", Pt), ("pl", Pl), ("de", De)]
               -- yes, I read RWH. it was ... eye-opening! :)
@@ -35,7 +35,7 @@ instance Read Language where
 instance Show Language where
     show En = "en"
     show Fr = "fr"
-    show Sp = "sp"
+    show Es = "es"
     show It = "it"
     show Ch = "ch"
     show Ru = "ru"
@@ -56,7 +56,6 @@ instance Eq LeoBool where
 data LeoOptions = LeoOptions {
         url         :: String,
         tolerMode   :: String,
-        lp          :: String,
         lang        :: Language,
         rmWords     :: LeoBool,
         rmSearch    :: LeoBool,
@@ -69,11 +68,11 @@ data LeoOptions = LeoOptions {
     deriving (Eq)
 
 instance Show LeoOptions where
-    show (LeoOptions u t l d e f g h i j k) = 
-        concat [ u ,
+    show (LeoOptions u t d e f g h i j k) = 
+        concat [ u , "/", show d, "de/query.xml",
                 "?tolerMode=", t, 
-                 "&lp=", l, 
-                 "&lang=", show d,
+                 "&lp=", show d, "de",
+                 "&lang=de",
                  "&rmWords=", show e, 
                  "&rmSearch=", show f, 
                  "&directN=", show g,
@@ -94,6 +93,8 @@ data Translation = Translation {
 
 data QueryResult = Nouns    [(Translation,Translation)] 
                  -- ^ Nouns    constructor is a list of translation tuples
+                 | Phrase    [(Translation,Translation)] 
+                 -- ^ Nouns    constructor is a list of translation tuples
                  | Verbs    [(Translation,Translation)] 
                  -- ^ Verbs    constructor is a list of translation tuples 
                  | AdjAdvs  [(Translation,Translation)] 
@@ -109,15 +110,14 @@ data OutFormat = JSON | TSV | CSV
 
 defaultLeoOptions :: LeoOptions
 defaultLeoOptions = LeoOptions { 
-        url = "http://dict.leo.org/dictQuery/m-vocab/ende/query.xml",
+        url = "http://dict.leo.org/dictQuery/m-vocab",
         tolerMode = "nof",
-        lp = "ende",
         lang = En,
         rmWords = LB False,
-        rmSearch = LB False,
+        rmSearch = LB True,
         directN = 0,
         search = "",
-        searchLoc = 0,
+        searchLoc = 1,
         resultOrder = Basic,
         sectLenMax  = 16
     }
