@@ -10,21 +10,24 @@ import Web.Leo.Types
 -- |'query' runs a translation query against the dict.leo.org webservice 
 query :: String            -- ^ search term to translate
       -> Language          -- ^ language to translate to/from 
+      -> Int
       -> IO [QueryResult] -- ^ returns a list of QueryResult
-query term l = do
-    result <- fetch term l
+query term l num = do
+    result <- fetch term (l, De) num
     let categories = processRaw result
     return $ map toQueryResult categories
 
 -- |'fetch' take a query string, some options and fetches a response from the webservice
 fetch :: String  -- ^ the query string
-      -> Language -- ^ the Language to query results for 
+      -> Translation -- ^ the Language to query results for 
+      -> Int
       -> IO String -- ^ the String response
-fetch q l = do
+fetch q l num = do
     -- -get = getRequest "?tolerMode=nof&lp=ende&lang=de&rmWords=off&rmSearch=on&directN=0&search=update&searchLoc=0&resultOrder=basic&sectLenMax=16"
     let req = defaultLeoOptions
-        flam = req { lang = l, search = q }
+        flam = req { getTrans = l, getTerm = q, sectLenMax = num }
         get = getRequest $ show flam 
+    print $ show flam
     result <- simpleHTTP get
     getResponseBody result
 
@@ -38,6 +41,7 @@ toQueryResult soup = let category = head soup in
         case fromAttrib "sctName" category of
             "subst"   -> Nouns    $ collectResults soup
             "phrase"  -> Phrase   $ collectResults soup
+            "praep"   -> Praep    $ collectResults soup
             "verb"    -> Verbs    $ collectResults soup
             "adjadv"  -> AdjAdvs  $ collectResults soup
             "example" -> Examples $ collectResults soup
@@ -46,12 +50,12 @@ toQueryResult soup = let category = head soup in
                                     $ partitions (~== TagOpen "entry" []) s
 
 -- |'toTranslation' takes an entry and turns it into a Translation set
-toTranslation :: [Tag String] -> (Translation, Translation)
-toTranslation entry = (Translation a astr, Translation b bstr)
+toTranslation :: [Tag String] -> (TEntry, TEntry)
+toTranslation entry = (TEntry a astr, TEntry b bstr)
     where sides = partitions (~== TagOpen "side" []) entry
           a     = read $ fromAttrib "lang" $ head $ head sides
-          astr  = concat $ map (fromTagText . head)
+          astr  = concatMap (fromTagText . head)
                     $ partitions (~== TagText "" ) $ head sides
           b     = read $ fromAttrib "lang" $ head $ last sides
-          bstr  = concat $ map (fromTagText . head) 
+          bstr  = concatMap (fromTagText . head) 
                     $ partitions (~== TagText "" ) $ last sides

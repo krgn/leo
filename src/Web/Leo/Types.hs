@@ -3,18 +3,6 @@ module Web.Leo.Types where
 import Data.Default(Default, def)
 import Network.HTTP(urlEncode)
 
-
-data ResultOrder = Basic | NoOrder
-    deriving Eq
-
-instance Show ResultOrder where 
-    show Basic = "basic"
-
-instance Read ResultOrder where
-    readsPrec _ value = if value == "basic"
-                        then [(Basic,   "")]
-                        else [(NoOrder, "")]
-
 data Language = En | Fr | Es | It | Ch | Ru | Pt | Pl | De | Unknown
     deriving (Eq)
 
@@ -43,63 +31,51 @@ instance Show Language where
     show Pl = "pl"
     show De = "de"
 
-newtype LeoBool = LB (Bool)
-
-instance Show LeoBool where
-    show (LB a) | a  = "on"
-                | not a = "off"
-
-instance Eq LeoBool where
-    LB x == LB y = x == y
-    LB x /= LB y = x /= y
-
 data LeoOptions = LeoOptions {
-        url         :: String,
-        tolerMode   :: String,
-        lang        :: Language,
-        rmWords     :: LeoBool,
-        rmSearch    :: LeoBool,
-        directN     :: Int,
-        search      :: String,
-        searchLoc   :: Int,
-        resultOrder :: ResultOrder,
-        sectLenMax  :: Int
+        getUrl     :: String,
+        getTrans   :: Translation,
+        getTerm    :: String,
+        searchLoc  :: Int,
+        sectLenMax :: Int
     } 
     deriving (Eq)
 
 instance Show LeoOptions where
-    show (LeoOptions u t d e f g h i j k) = 
-        concat [ u , "/", show d, "de/query.xml",
-                "?tolerMode=", t, 
-                 "&lp=", show d, "de",
-                 "&lang=de",
-                 "&rmWords=", show e, 
-                 "&rmSearch=", show f, 
-                 "&directN=", show g,
-                 "&search=", urlEncode h, 
-                 "&searchLoc=", show i, 
-                 "&resultOrder=", show j,
-                 "&sectLenMax=", show k ]
+    show (LeoOptions url trans search dir len) = 
+        concat [ url , "/", toString trans, "/query.xml",
+                "?tolerMode=nof",
+                 "&lp=", toString trans,
+                 "&lang=de&rmWords=off&rmSearch=on&directN=0&resultOrder=basic",
+                 "&search=", urlEncode search, 
+                 "&searchLoc=", show dir, 
+                 "&sectLenMax=", show len ]
 
 instance Default LeoOptions where
     def = defaultLeoOptions
 
+type Translation = (Language,Language)
+
+toString :: Translation -> String
+toString s = (show $ fst s) ++ (show $ snd s)
+
 -- | A Tanslation always has a language and a value, the translation
-data Translation = Translation { 
-        language    :: Language, 
-        translation :: String 
+data TEntry = TEntry { 
+        getLang   :: Language, 
+        getResult :: String 
     }
     deriving (Show, Eq)
 
-data QueryResult = Nouns    [(Translation,Translation)] 
+data QueryResult = Nouns    [(TEntry,TEntry)] 
                  -- ^ Nouns    constructor is a list of translation tuples
-                 | Phrase    [(Translation,Translation)] 
-                 -- ^ Nouns    constructor is a list of translation tuples
-                 | Verbs    [(Translation,Translation)] 
+                 | Phrase    [(TEntry,TEntry)] 
+                 -- ^ Phras    constructor is a list of translation tuples
+                 | Praep    [(TEntry,TEntry)] 
+                 -- ^ Praepositions constructor is a list of translation tuples
+                 | Verbs    [(TEntry,TEntry)] 
                  -- ^ Verbs    constructor is a list of translation tuples 
-                 | AdjAdvs  [(Translation,Translation)] 
+                 | AdjAdvs  [(TEntry,TEntry)] 
                  -- ^ AdjAdvs  constructor is a list of translation tuples 
-                 | Examples [(Translation,Translation)] 
+                 | Examples [(TEntry,TEntry)] 
                  -- ^ Examples constructor is a list of translation tuples
                  | None
                  -- ^ None for queries with no result
@@ -110,14 +86,9 @@ data OutFormat = JSON | TSV | CSV
 
 defaultLeoOptions :: LeoOptions
 defaultLeoOptions = LeoOptions { 
-        url = "http://dict.leo.org/dictQuery/m-vocab",
-        tolerMode = "nof",
-        lang = En,
-        rmWords = LB False,
-        rmSearch = LB True,
-        directN = 0,
-        search = "",
-        searchLoc = 1,
-        resultOrder = Basic,
-        sectLenMax  = 16
+        getUrl     = "http://dict.leo.org/dictQuery/m-vocab",
+        getTrans   = (En,De),
+        getTerm    = "",
+        searchLoc  = 0,
+        sectLenMax = 16
     }
