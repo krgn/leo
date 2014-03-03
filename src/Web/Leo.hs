@@ -3,6 +3,7 @@ module Web.Leo(query, Language) where
 import Text.HTML.TagSoup
 import Network.HTTP
 import Web.Leo.Types 
+import Control.Applicative
 
 --    finally, we need to display the results on stdout
 --    for that it would be nice to display as json or (c|t)sv
@@ -39,23 +40,40 @@ processRaw = partitions (~== TagOpen "section" []) . parseTags
 toQueryResult :: [Tag String] -> QueryResult
 toQueryResult soup = let category = head soup in 
         case fromAttrib "sctName" category of
-            "subst"   -> Nouns    $ collectResults soup
-            "phrase"  -> Phrase   $ collectResults soup
-            "praep"   -> Praep    $ collectResults soup
-            "verb"    -> Verbs    $ collectResults soup
-            "adjadv"  -> AdjAdvs  $ collectResults soup
-            "example" -> Examples $ collectResults soup
+            "subst"   -> Nouns    $ collectR soup
+            "phrase"  -> Phrase   $ collectR soup
+            "praep"   -> Praep    $ collectR soup
+            "verb"    -> Verbs    $ collectR soup
+            "adjadv"  -> AdjAdvs  $ collectR soup
+            "example" -> Examples $ collectR soup
             _         -> None
-        where collectResults s = map toTranslation 
-                                    $ partitions (~== TagOpen "entry" []) s
+        where collectR s = map toTranslation $ entryT s
 
 -- |'toTranslation' takes an entry and turns it into a Translation set
 toTranslation :: [Tag String] -> (TEntry, TEntry)
-toTranslation entry = (TEntry a astr, TEntry b bstr)
-    where sides = partitions (~== TagOpen "side" []) entry
-          a     = read $ fromAttrib "lang" $ head $ head sides
-          astr  = concatMap (fromTagText . head)
-                    $ partitions (~== TagText "" ) $ head sides
-          b     = read $ fromAttrib "lang" $ head $ last sides
-          bstr  = concatMap (fromTagText . head) 
-                    $ partitions (~== TagText "" ) $ last sides
+toTranslation entry = (TEntry langL transL, TEntry langR transR)
+    where sides = sideT entry
+
+          langL  = parseLang $ head sides
+          transL = map fromTagText $ textT $ head sides
+
+          langR  = parseLang $ last sides
+          transR = map fromTagText $ textT $ last sides
+
+
+parseLang :: [Tag String] -> Language
+parseLang s = read $ fromAttrib "lang" $ head s
+
+matchT :: String -> [Tag String] -> [[Tag String]]
+matchT attr = partitions (~== TagOpen attr []) 
+
+entryT, sideT :: [Tag String] -> [[Tag String]]
+entryT = matchT "entry"
+sideT  = matchT "side"
+
+textT :: [Tag String] -> [Tag String]
+textT s = filter (\n -> case n of 
+                    TagText _   -> True
+                    _           -> False) sliced 
+    where sliced = takeWhile (not . isTagCloseName "words") rest 
+          rest   = dropWhile (not . isTagOpenName "words") s

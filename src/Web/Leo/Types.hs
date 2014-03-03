@@ -56,12 +56,12 @@ instance Default LeoOptions where
 type Translation = (Language,Language)
 
 toString :: Translation -> String
-toString s = (show $ fst s) ++ (show $ snd s)
+toString s = show (fst s) ++ show (snd s)
 
 -- | A Tanslation always has a language and a value, the translation
 data TEntry = TEntry { 
         getLang   :: Language, 
-        getResult :: String 
+        getResult :: [String] 
     }
     deriving (Show, Eq)
 
