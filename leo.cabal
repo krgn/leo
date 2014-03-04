@@ -24,6 +24,8 @@ library
                          , HTTP
                          , data-default
                          , cmdtheline
+                         , fast-tagsoup-utf8-only
+                          , bytestring
 
     exposed-modules:     Web.Leo
 
@@ -34,6 +36,8 @@ executable leo
                           , data-default
                           , HTTP
                           , cmdtheline
+                          , fast-tagsoup-utf8-only
+                          , bytestring
 
     hs-source-dirs:       src
     default-language:     Haskell2010

@@ -1,9 +1,12 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 module Web.Leo(query, Language) where
 
-import Text.HTML.TagSoup
+import Text.HTML.TagSoup hiding (parseTags)
+import Text.HTML.TagSoup.Fast.Utf8Only
 import Network.HTTP
 import Web.Leo.Types 
-import Control.Applicative
+import qualified Data.ByteString.Char8 as CBS
 
 --    finally, we need to display the results on stdout
 --    for that it would be nice to display as json or (c|t)sv
@@ -15,7 +18,7 @@ query :: String            -- ^ search term to translate
       -> IO [QueryResult] -- ^ returns a list of QueryResult
 query term l num = do
     result <- fetch term (l, De) num
-    let categories = processRaw result
+    let categories = processRaw $ CBS.pack result
     return $ map toQueryResult categories
 
 -- |'fetch' take a query string, some options and fetches a response from the webservice
@@ -33,11 +36,12 @@ fetch q l num = do
     getResponseBody result
 
 -- |'processRaw' takes a raw XML response, soupifies it and returns the result sections
-processRaw :: String -> [[Tag String]]
-processRaw = partitions (~== TagOpen "section" []) . parseTags
+processRaw :: CBS.ByteString -> [[Tag CBS.ByteString]]
+processRaw s = matchT "section" tags
+    where tags = parseTags s
 
 -- |'toQueryResult' turns a section and turns into a QueryResult
-toQueryResult :: [Tag String] -> QueryResult
+toQueryResult :: [Tag CBS.ByteString] -> QueryResult
 toQueryResult soup = let category = head soup in 
         case fromAttrib "sctName" category of
             "subst"   -> Nouns    $ collectR soup
@@ -50,7 +54,7 @@ toQueryResult soup = let category = head soup in
         where collectR s = map toTranslation $ entryT s
 
 -- |'toTranslation' takes an entry and turns it into a Translation set
-toTranslation :: [Tag String] -> (TEntry, TEntry)
+toTranslation :: [Tag CBS.ByteString] -> (TEntry, TEntry)
 toTranslation entry = (TEntry langL transL, TEntry langR transR)
     where sides = sideT entry
 
@@ -61,17 +65,17 @@ toTranslation entry = (TEntry langL transL, TEntry langR transR)
           transR = map fromTagText $ textT $ last sides
 
 
-parseLang :: [Tag String] -> Language
-parseLang s = read $ fromAttrib "lang" $ head s
+parseLang :: [Tag CBS.ByteString] -> Language
+parseLang s = read $ fromAttrib "lang" $ fmap CBS.unpack $ head s
 
-matchT :: String -> [Tag String] -> [[Tag String]]
+matchT :: String -> [Tag CBS.ByteString] -> [[Tag CBS.ByteString]]
 matchT attr = partitions (~== TagOpen attr []) 
 
-entryT, sideT :: [Tag String] -> [[Tag String]]
+entryT, sideT :: [Tag CBS.ByteString] -> [[Tag CBS.ByteString]]
 entryT = matchT "entry"
 sideT  = matchT "side"
 
-textT :: [Tag String] -> [Tag String]
+textT :: [Tag CBS.ByteString] -> [Tag CBS.ByteString]
 textT s = filter (\n -> case n of 
                     TagText _   -> True
                     _           -> False) sliced 

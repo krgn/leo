@@ -1,5 +1,8 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 module Web.Leo.Types where
 
+import qualified Data.ByteString.Char8 as CBS
 import Data.Default(Default, def)
 import Network.HTTP(urlEncode)
 
@@ -61,7 +64,7 @@ toString s = show (fst s) ++ show (snd s)
 -- | A Tanslation always has a language and a value, the translation
 data TEntry = TEntry { 
         getLang   :: Language, 
-        getResult :: [String] 
+        getResult :: [CBS.ByteString] 
     }
     deriving (Show, Eq)
 
