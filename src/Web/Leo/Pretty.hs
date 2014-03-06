@@ -23,20 +23,20 @@ instance Pretty String where
     prettyList ss = foldr (\n p -> pretty n <+> pretty p) empty ss
 
 instance Pretty TEntry where
-    pretty e = (bold $ pretty $ getLang e) <+> (pretty $ getResult e)
+    pretty e = (pretty $ getResult e)
 
 instance Pretty (TEntry,TEntry) where
     pretty (l,r) = fill 10 leftE <+> rightE 
-        where leftE  = (bold $ pretty $ getLang l) <+> (pretty $ getResult l)
-              rightE = (pretty $ getResult r) <+> (bold $ pretty $ getLang r)
-    prettyList xs = foldr (\n p -> pretty n <$> pretty p) empty xs
+        where leftE  = pretty $ getResult l
+              rightE = pretty $ getResult r
+    prettyList xs = foldr (\n p -> pretty n <+> fill 40 empty <+> pretty p) empty xs
 
 instance Pretty QueryResult where
-    pretty (Nouns    xs) = string "Nouns:"    <$> prettyList xs
-    pretty (Phrase   xs) = string "Phrases:"  <$> prettyList xs
-    pretty (Verbs    xs) = string "Verbs:"    <$> prettyList xs
-    pretty (AdjAdvs  xs) = string "AdjAdvs:"  <$> prettyList xs
-    pretty (Examples xs) = string "Examples:" <$> prettyList xs
+    pretty (Nouns    xs) = underline (bold (text "Nouns:"))    <$> indent 4 (vsep (map pretty xs))
+    pretty (Phrase   xs) = underline (bold (text "Phrases:"))  <$> indent 4 (vsep (map pretty xs))
+    pretty (Verbs    xs) = underline (bold (text  "Verbs:"))   <$> indent 4 (vsep (map pretty xs))
+    pretty (AdjAdvs  xs) = underline (bold (text "AdjAdvs:"))  <$> indent 4 (vsep (map pretty xs))
+    pretty (Examples xs) = underline (bold (text "Examples:")) <$> indent 4 (vsep (map pretty xs))
     pretty None          = string "None"
 
     prettyList xs = foldr (\n p -> pretty n <$> pretty p) empty xs
