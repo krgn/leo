@@ -1,5 +1,6 @@
 module Web.Leo.Types where
 
+import Text.PrettyPrint.ANSI.Leijen
 import Data.Default(Default, def)
 import Network.HTTP(urlEncode)
 
@@ -31,7 +32,8 @@ instance Show Language where
     show Pl = "pl"
     show De = "de"
 
-data LeoOptions = LeoOptions {
+data LeoOptions = 
+    LeoOptions {
         getUrl     :: String,
         getTrans   :: Translation,
         getTerm    :: String,
@@ -50,42 +52,37 @@ instance Show LeoOptions where
                  "&searchLoc=", show dir, 
                  "&sectLenMax=", show len ]
 
+        where toString s = show (fst s) ++ show (snd s)
+
 instance Default LeoOptions where
     def = defaultLeoOptions
 
 type Translation = (Language,Language)
 
-toString :: Translation -> String
-toString s = show (fst s) ++ show (snd s)
-
 -- | A Tanslation always has a language and a value, the translation
-data TEntry = TEntry { 
+data TEntry = 
+    TEntry { 
         getLang   :: Language, 
         getResult :: [String] 
     }
     deriving (Show, Eq)
-
-data QueryResult = Nouns    [(TEntry,TEntry)] 
-                 -- ^ Nouns    constructor is a list of translation tuples
-                 | Phrase    [(TEntry,TEntry)] 
-                 -- ^ Phras    constructor is a list of translation tuples
-                 | Praep    [(TEntry,TEntry)] 
-                 -- ^ Praepositions constructor is a list of translation tuples
-                 | Verbs    [(TEntry,TEntry)] 
-                 -- ^ Verbs    constructor is a list of translation tuples 
-                 | AdjAdvs  [(TEntry,TEntry)] 
-                 -- ^ AdjAdvs  constructor is a list of translation tuples 
-                 | Examples [(TEntry,TEntry)] 
-                 -- ^ Examples constructor is a list of translation tuples
-                 | None
-                 -- ^ None for queries with no result
-                 deriving (Show)
+ 
+data QueryResult = 
+    Nouns      [(TEntry,TEntry)] 
+    | Phrase   [(TEntry,TEntry)] 
+    | Praep    [(TEntry,TEntry)] 
+    | Verbs    [(TEntry,TEntry)] 
+    | AdjAdvs  [(TEntry,TEntry)] 
+    | Examples [(TEntry,TEntry)] 
+    | None
+    deriving (Show)
 
 data OutFormat = JSON | TSV | CSV
     deriving (Show, Eq)
 
 defaultLeoOptions :: LeoOptions
-defaultLeoOptions = LeoOptions { 
+defaultLeoOptions = 
+    LeoOptions { 
         getUrl     = "http://dict.leo.org/dictQuery/m-vocab",
         getTrans   = (En,De),
         getTerm    = "",

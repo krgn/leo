@@ -2,8 +2,10 @@ module Main(main) where
 
 import Text.Read(readMaybe)
 import Web.Leo(Language, query)
+import Web.Leo.Pretty
 import System.Console.CmdTheLine
 import Control.Applicative
+import qualified Text.PrettyPrint.ANSI.Leijen as PP
 
 searchTerm :: Term String
 searchTerm =  required $ pos 0 Nothing posInfo { posName = "PATTERN" }
@@ -26,8 +28,9 @@ queryWithOptions term lang num = do
     case trans of
         Just l -> do
             results <- query term l num
-            print $ show results
+            PP.putDoc $ PP.prettyList $ results
         _ -> fail "invalid language(s)"
 
 main :: IO ()
 main = run (runQuery, termInfo)
+

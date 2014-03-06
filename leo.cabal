@@ -22,19 +22,29 @@ library
     build-depends:       base >=4.6 && <4.7
                          , tagsoup
                          , HTTP
+                         , http-conduit
                          , data-default
                          , cmdtheline
+                         , utf8-string
+                         , bytestring
+                         , ansi-wl-pprint
 
     exposed-modules:     Web.Leo
+                         Web.Leo.Types
+                         Web.Leo.Pretty
 
 executable leo
-    main-is:              Main.hs            
-    build-depends:        base >=4.6 && <4.7
-                          , tagsoup
-                          , data-default
-                          , HTTP
-                          , cmdtheline
+    main-is:             Main.hs            
+    build-depends:       base >=4.6 && <4.7
+                         , tagsoup
+                         , data-default
+                         , HTTP
+                         , http-conduit
+                         , cmdtheline
+                         , bytestring
+                         , utf8-string
+                         , ansi-wl-pprint
 
-    hs-source-dirs:       src
-    default-language:     Haskell2010
-    other-modules:        Web.Leo
+    hs-source-dirs:      src
+    default-language:    Haskell2010
+    other-modules:       Web.Leo

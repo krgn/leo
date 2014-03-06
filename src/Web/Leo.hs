@@ -1,9 +1,12 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 module Web.Leo(query, Language) where
 
 import Text.HTML.TagSoup
-import Network.HTTP
+import Network.HTTP.Conduit ( simpleHttp )
 import Web.Leo.Types 
-import Control.Applicative
+import qualified Data.ByteString.Lazy as L
+import qualified Data.ByteString.UTF8 as U
 
 --    finally, we need to display the results on stdout
 --    for that it would be nice to display as json or (c|t)sv
@@ -24,17 +27,17 @@ fetch :: String  -- ^ the query string
       -> Int
       -> IO String -- ^ the String response
 fetch q l num = do
-    -- -get = getRequest "?tolerMode=nof&lp=ende&lang=de&rmWords=off&rmSearch=on&directN=0&search=update&searchLoc=0&resultOrder=basic&sectLenMax=16"
-    let req = defaultLeoOptions
-        flam = req { getTrans = l, getTerm = q, sectLenMax = num }
-        get = getRequest $ show flam 
-    print $ show flam
-    result <- simpleHTTP get
-    getResponseBody result
+    let req = defaultLeoOptions 
+         { getTrans = l
+         , getTerm = q
+         , sectLenMax = num 
+         }
+    result <- simpleHttp $ show req
+    return $ U.toString $ L.toStrict result
 
 -- |'processRaw' takes a raw XML response, soupifies it and returns the result sections
 processRaw :: String -> [[Tag String]]
-processRaw = partitions (~== TagOpen "section" []) . parseTags
+processRaw s = matchT "section" $ parseTags s
 
 -- |'toQueryResult' turns a section and turns into a QueryResult
 toQueryResult :: [Tag String] -> QueryResult
@@ -59,7 +62,6 @@ toTranslation entry = (TEntry langL transL, TEntry langR transR)
 
           langR  = parseLang $ last sides
           transR = map fromTagText $ textT $ last sides
-
 
 parseLang :: [Tag String] -> Language
 parseLang s = read $ fromAttrib "lang" $ head s
