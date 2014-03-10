@@ -31,6 +31,8 @@ the `--help` switch.
 ```
 leo --help
 
+leo -l en -n 10 kettle
+
 ```
 
 Valid languages are:
@@ -49,7 +51,7 @@ pl - Polish
 Todo:
 ----
 
-* Implement Output formats (Stdout, CSV, JSON)
+* Implement JSON output format
 
 Disclaimer
 ----------
