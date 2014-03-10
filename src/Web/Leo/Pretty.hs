@@ -27,6 +27,7 @@ instance P.Pretty [QueryResult] where
               hhcat  = B.hsep 2 B.left
 
 accColumns :: [QueryResult] -> [[String]]
+accColumns []     = [ ["No results"] ]
 accColumns (x:[]) = toColumns x
 accColumns (x:xs) = foldr proc  (toColumns x) xs
     where proc qr acc = [ head acc ++ [""] ++ (head $ toColumns qr)

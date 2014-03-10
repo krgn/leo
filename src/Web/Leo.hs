@@ -2,8 +2,9 @@
 
 module Web.Leo(query, Language) where
 
+import Control.Exception
 import Text.HTML.TagSoup
-import Network.HTTP.Conduit ( simpleHttp )
+import Network.HTTP.Conduit
 import Web.Leo.Types 
 import qualified Data.ByteString.Lazy as L
 import qualified Data.ByteString.UTF8 as U
@@ -32,7 +33,9 @@ fetch q l num = do
          , getTerm = q
          , sectLenMax = num 
          }
-    result <- simpleHttp $ show req
+    result <- catch (simpleHttp $ show req)
+                    (\e -> do let err = show (e :: HttpException)
+                              fail "no connection")
     return $ U.toString $ L.toStrict result
 
 -- |'processRaw' takes a raw XML response, soupifies it and returns the result sections
