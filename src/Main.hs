@@ -28,7 +28,7 @@ queryWithOptions term lang num = do
     case trans of
         Just l -> do
             results <- query term l num
-            PP.putDoc $ PP.prettyList $ results
+            PP.putDoc $ PP.pretty $ results
         _ -> fail "invalid language(s)"
 
 main :: IO ()
