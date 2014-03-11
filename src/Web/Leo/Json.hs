@@ -28,6 +28,6 @@ instance ToJSON [QueryResult] where
               processResult (Verbs     ts) ps = ps ++ ["verbs"   .= ts]
               processResult (Phrase    ts) ps = ps ++ ["phrase"  .= ts]
               processResult (Praep     ts) ps = ps ++ ["praep"   .= ts]
-              processResult (AdjAdvs   ts) ps = ps ++ ["adjadvs" .= ts]
-              processResult (Examples  ts) ps = ps ++ ["exmples" .= ts]
+              processResult (AdjAdvs   ts) ps = ps ++ ["adj-advs" .= ts]
+              processResult (Examples  ts) ps = ps ++ ["examples" .= ts]
               processResult None           ps = ps
