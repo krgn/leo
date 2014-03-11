@@ -55,20 +55,20 @@ instance Show LeoOptions where
 type Translation = (Language,Language)
 
 -- | A Tanslation always has a language and a value, the translation
-data TEntry = 
-    TEntry { 
+data Entry = 
+    Entry { 
         getLang   :: Language, 
         getResult :: [String] 
     }
     deriving (Show, Eq)
  
 data QueryResult = 
-    Nouns      [(TEntry,TEntry)] 
-    | Phrase   [(TEntry,TEntry)] 
-    | Praep    [(TEntry,TEntry)] 
-    | Verbs    [(TEntry,TEntry)] 
-    | AdjAdvs  [(TEntry,TEntry)] 
-    | Examples [(TEntry,TEntry)] 
+    Nouns      [(Entry,Entry)] 
+    | Phrase   [(Entry,Entry)] 
+    | Praep    [(Entry,Entry)] 
+    | Verbs    [(Entry,Entry)] 
+    | AdjAdvs  [(Entry,Entry)] 
+    | Examples [(Entry,Entry)] 
     | None
     deriving (Show)
 

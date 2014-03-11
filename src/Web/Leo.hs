@@ -1,6 +1,11 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Web.Leo(query, Language) where
+module Web.Leo(
+    query
+    , Language
+    , QueryResult
+    , Entry(..)
+    ) where
 
 import Web.Leo.Types 
 
@@ -53,8 +58,8 @@ toQueryResult soup = let category = head soup in
         where collectR s = map toTranslation $ entryT s
 
 -- takes an entry and turns it into a Translation set
-toTranslation :: [Tag String] -> (TEntry, TEntry)
-toTranslation entry = (TEntry langL transL, TEntry langR transR)
+toTranslation :: [Tag String] -> (Entry, Entry)
+toTranslation entry = (Entry langL transL, Entry langR transR)
     where sides = sideT entry
 
           langL  = parseLang $ head sides

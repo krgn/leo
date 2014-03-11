@@ -37,14 +37,14 @@ accColumns (x:xs) = foldr proc  (toColumns x) xs
 toColumns :: QueryResult -> [[String]]
 toColumns n = transpire (resultHeader n) (fromResult n)
 
-transpire :: [[String]] -> [(TEntry,TEntry)] -> [[String]]
+transpire :: [[String]] -> [(Entry,Entry)] -> [[String]]
 transpire header xs  = transpose $ (header ++ body)
     where body = map (\(l,r) -> [processResult l, processResult r]) xs
 
-processResult :: TEntry -> String
+processResult :: Entry -> String
 processResult = intercalate ", " . getResult
 
-fromResult :: QueryResult -> [(TEntry, TEntry)]
+fromResult :: QueryResult -> [(Entry, Entry)]
 fromResult (Nouns    xs) = xs
 fromResult (Verbs    xs) = xs
 fromResult (Phrase   xs) = xs 
