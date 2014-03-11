@@ -2,10 +2,11 @@
 
 module Web.Leo(query, Language) where
 
+import Web.Leo.Types 
+
 import Control.Exception
 import Text.HTML.TagSoup
 import Network.HTTP.Conduit
-import Web.Leo.Types 
 import qualified Data.ByteString.Lazy as L
 import qualified Data.ByteString.UTF8 as U
 
@@ -14,35 +15,31 @@ import qualified Data.ByteString.UTF8 as U
 
 -- |'query' runs a translation query against the dict.leo.org webservice 
 query :: String            -- ^ search term to translate
-      -> Language          -- ^ language to translate to/from 
-      -> Int
-      -> IO [QueryResult] -- ^ returns a list of QueryResult
+      -> Language          -- ^ language to translate to (e.g. 'En', 'Es' ...)
+      -> Int               -- ^ maximum number of results to fetch
+      -> IO [QueryResult]  -- ^ returns a list of QueryResult
 query term l num = do
     result <- fetch term (l, De) num
     let categories = processRaw result
     return $ map toQueryResult categories
 
--- |'fetch' take a query string, some options and fetches a response from the webservice
-fetch :: String  -- ^ the query string
-      -> Translation -- ^ the Language to query results for 
-      -> Int
-      -> IO String -- ^ the String response
+-- take a query string, some options and fetches a response from the webservice
+fetch :: String -> Translation -> Int -> IO String
 fetch q l num = do
     let req = defaultLeoOptions 
          { getTrans = l
          , getTerm = q
-         , sectLenMax = num 
-         }
+         , sectLenMax = num }
     result <- catch (simpleHttp $ show req)
                     (\e -> do let err = show (e :: HttpException)
                               fail "no connection")
     return $ U.toString $ L.toStrict result
 
--- |'processRaw' takes a raw XML response, soupifies it and returns the result sections
+-- takes a raw XML response, soupifies it and returns the result sections
 processRaw :: String -> [[Tag String]]
 processRaw s = matchT "section" $ parseTags s
 
--- |'toQueryResult' turns a section and turns into a QueryResult
+-- turns a section and turns into a QueryResult
 toQueryResult :: [Tag String] -> QueryResult
 toQueryResult soup = let category = head soup in 
         case fromAttrib "sctName" category of
@@ -55,7 +52,7 @@ toQueryResult soup = let category = head soup in
             _         -> None
         where collectR s = map toTranslation $ entryT s
 
--- |'toTranslation' takes an entry and turns it into a Translation set
+-- takes an entry and turns it into a Translation set
 toTranslation :: [Tag String] -> (TEntry, TEntry)
 toTranslation entry = (TEntry langL transL, TEntry langR transR)
     where sides = sideT entry
@@ -66,16 +63,20 @@ toTranslation entry = (TEntry langL transL, TEntry langR transR)
           langR  = parseLang $ last sides
           transR = map fromTagText $ textT $ last sides
 
+-- read lang attr and return Language
 parseLang :: [Tag String] -> Language
 parseLang s = read $ fromAttrib "lang" $ head s
 
+-- match a partition/section with particular tag name
 matchT :: String -> [Tag String] -> [[Tag String]]
 matchT attr = partitions (~== TagOpen attr []) 
 
+-- wrappers for <entry><side>...</side><side>...</side></entry>
 entryT, sideT :: [Tag String] -> [[Tag String]]
 entryT = matchT "entry"
 sideT  = matchT "side"
 
+-- extract tag contents
 textT :: [Tag String] -> [Tag String]
 textT s = filter (\n -> case n of 
                     TagText _   -> True

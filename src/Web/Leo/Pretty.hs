@@ -1,11 +1,12 @@
-{-# LANGUAGE FlexibleInstances      #-}
-{-# LANGUAGE OverlappingInstances   #-}
+{-# LANGUAGE FlexibleInstances #-}
+{-# LANGUAGE OverlappingInstances #-}
 
-module Web.Leo.Pretty where
+-- only export instances
+module Web.Leo.Pretty() where
 
 import Web.Leo.Types
 import Data.List
-import Text.PrettyPrint.ANSI.Leijen ((<$>))
+
 import qualified Text.PrettyPrint.ANSI.Leijen as P
 import qualified Text.PrettyPrint.Boxes as B
 
@@ -43,14 +44,6 @@ transpire header xs  = transpose $ (header ++ body)
 processResult :: TEntry -> String
 processResult = intercalate ", " . getResult
 
-firstResult :: QueryResult -> (TEntry,TEntry)
-firstResult (Nouns    (x:_)) = x
-firstResult (Verbs    (x:_)) = x
-firstResult (Phrase   (x:_)) = x 
-firstResult (Praep    (x:_)) = x 
-firstResult (AdjAdvs  (x:_)) = x
-firstResult (Examples (x:_)) = x
-
 fromResult :: QueryResult -> [(TEntry, TEntry)]
 fromResult (Nouns    xs) = xs
 fromResult (Verbs    xs) = xs
@@ -72,4 +65,5 @@ resultHeader None         = (prettier "Unknown"            : [""]) : emptyL
 prettier :: String -> String
 prettier = show . P.underline . P.bold . P.text
 
+emptyL :: [[String]]
 emptyL = ["",""] : []

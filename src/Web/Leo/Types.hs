@@ -1,7 +1,5 @@
 module Web.Leo.Types where
 
-import Text.PrettyPrint.ANSI.Leijen
-import Data.Default(Default, def)
 import Network.HTTP(urlEncode)
 
 data Language = En | Fr | Es | It | Ch | Ru | Pt | Pl | De | Unknown
@@ -53,9 +51,6 @@ instance Show LeoOptions where
                  "&sectLenMax=", show len ]
 
         where toString s = show (fst s) ++ show (snd s)
-
-instance Default LeoOptions where
-    def = defaultLeoOptions
 
 type Translation = (Language,Language)
 
