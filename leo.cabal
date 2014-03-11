@@ -4,8 +4,8 @@
 name:                leo
 version:             0.1.0.0
 synopsis:            Query the leo translation database
--- description:         
-homepage:            http://ioctl.it/sft/leo
+description:         leo lets you query http://dict.leo.org from your program, or the command line. 
+homepage:            http://github.com/krgn/leo
 license:             BSD3
 license-file:        LICENSE
 author:              Karsten Gebbert
@@ -13,8 +13,11 @@ maintainer:          k@ioctl.it
 -- copyright:           
 category:            Web
 build-type:          Simple
--- extra-source-files:  
 cabal-version:       >=1.10
+
+source-repository head
+  type:              git
+  location:          https://github.com/krgn/leo.git
 
 library
     default-language:    Haskell2010
